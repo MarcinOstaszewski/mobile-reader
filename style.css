@@ -1,0 +1,61 @@
+body {
+    margin: 5px;
+    background-color: rgb(43, 43, 43);
+    color: #eee;
+    width: 100%;
+    overflow: hidden;
+}
+#textarea {
+    overflow: scroll;
+}
+#window-size {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+#switch {
+    height: 22px;
+    padding-top: 4px;
+}
+#controls>div#switch>div {
+    height: 2px;
+    padding: 0px;
+    width: 14px;
+    margin: 2px 4px;
+    background-color: #000;
+}
+#controls {
+    position: fixed;
+    top: 3  0px;
+    left: 10px;
+    display: flex;
+    flex-direction: column; 
+    transition: all 0.4s;
+}
+#controls.hidden {
+    left: -30px;
+    transition: all 0.4s;
+}
+#controls>div {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    margin: 5px 0px;
+}
+#controls>div>div {
+    padding: 5px;
+    line-height: 20px;
+    color: #666;
+    text-align: center;
+}
+#controls>div>div:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+#controls>div>div:first-child {
+    font-size: 18px;
+}
+#controls>div>div:nth-child(2) {
+    font-size: 10px;
+    font-weight: bold;
+}
