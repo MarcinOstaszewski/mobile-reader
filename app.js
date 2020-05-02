@@ -7,7 +7,8 @@ window.addEventListener('DOMContentLoaded', ()=> {
     let changeWindowSize = () => {
         wIW = window.innerWidth;
         wIH = window.innerHeight;
-        windowSize.innerText = 'Width: ' + wIW + ' Height: ' + wIH;
+        devPixRatio = window.devicePixelRatio;
+        windowSize.innerText = 'Width: ' + wIW + ' Height: ' + wIH + ' PixelRatio: ' + devPixRatio;
         textarea.style.width = Math.floor(wIW - 15) + 'px';
         textarea.style.height = Math.floor(wIH - 45) + 'px';
     }
